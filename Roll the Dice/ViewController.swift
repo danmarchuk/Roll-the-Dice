@@ -11,17 +11,25 @@ class ViewController: UIViewController {
 //  IBO allows me to reference a UI element
     @IBOutlet weak var diceImageView2: UIImageView!
     @IBOutlet weak var diceImageView1: UIImageView!
+    let diceArray1 = [ #imageLiteral(resourceName: "Dice 1"), #imageLiteral(resourceName: "Dice 2"), #imageLiteral(resourceName: "Dice 3"), #imageLiteral(resourceName: "Dice 4"), #imageLiteral(resourceName: "Dice 5"), #imageLiteral(resourceName: "Dice 6") ]
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // WHO         WHAT     VALUE
-        diceImageView1.image = #imageLiteral(resourceName: "Dice 3")
-        diceImageView2.image = #imageLiteral(resourceName: "Dice 5")
-        diceImageView1.alpha = 0.5
-        
-        
+        diceImageView1.image =  diceArray1.randomElement()
+        diceImageView2.image = diceArray1.randomElement()
     }
 
+    @IBAction func rollButtonPressed(_ sender: UIButton) {
 
+        // create an array with the images
+        let diceArray = [ #imageLiteral(resourceName: "Dice 1"), #imageLiteral(resourceName: "Dice 2"), #imageLiteral(resourceName: "Dice 3"), #imageLiteral(resourceName: "Dice 4"), #imageLiteral(resourceName: "Dice 5"), #imageLiteral(resourceName: "Dice 6") ]
+        
+        // display a random image from an array
+        diceImageView1.image =  diceArray.randomElement()
+        diceImageView2.image = diceArray.randomElement()
+
+        
+    }
+    
 }
 
