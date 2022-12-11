@@ -1,8 +1,10 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -11,15 +13,53 @@
             <objects>
                 <viewController id="01J-lp-oVM" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9Rg-GL-Fv6">
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                                <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="200" placeholderIntrinsicHeight="200" image="launchscreen" translatesAutoresizingMaskIntoConstraints="NO" id="Pam-76-0ho">
+                                <rect key="frame" x="95" y="322" width="200" height="200"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Roll the Dice" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FMc-Gl-3Aq">
+                                <rect key="frame" x="63" y="542" width="265" height="52"/>
+                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="9Rg-GL-Fv6" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="0QJ-aO-I0q"/>
+                            <constraint firstItem="9Rg-GL-Fv6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="0Yn-15-vwa"/>
+                            <constraint firstItem="9Rg-GL-Fv6" firstAttribute="trailing" secondItem="Ze5-6b-2t3" secondAttribute="trailing" id="19k-W4-E6B"/>
+                            <constraint firstAttribute="bottom" secondItem="9Rg-GL-Fv6" secondAttribute="bottom" id="5So-xM-LUB"/>
+                            <constraint firstItem="9Rg-GL-Fv6" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="GJy-SE-CM6"/>
+                            <constraint firstItem="Pam-76-0ho" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Jjf-rN-X1m"/>
+                            <constraint firstAttribute="bottom" secondItem="9Rg-GL-Fv6" secondAttribute="bottom" id="Qvq-2e-6XX"/>
+                            <constraint firstItem="9Rg-GL-Fv6" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="SQ8-Z1-wb0"/>
+                            <constraint firstItem="Pam-76-0ho" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="UaF-L5-c3t"/>
+                            <constraint firstItem="FMc-Gl-3Aq" firstAttribute="top" secondItem="Pam-76-0ho" secondAttribute="bottom" constant="20" id="X0A-a6-MWu"/>
+                            <constraint firstItem="FMc-Gl-3Aq" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="iW2-pn-LQ5"/>
+                            <constraint firstItem="9Rg-GL-Fv6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="yQa-sq-vOX"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="50.769230769230766" y="373.93364928909949"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="launchscreen" width="166.66667175292969" height="166.66667175292969"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>

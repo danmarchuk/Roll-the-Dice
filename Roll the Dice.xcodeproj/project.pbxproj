@@ -13,6 +13,8 @@
 		9362906129437619003BF4CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9362905F29437619003BF4CE /* Main.storyboard */; };
 		936290632943761B003BF4CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 936290622943761B003BF4CE /* Assets.xcassets */; };
 		936290662943761B003BF4CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 936290642943761B003BF4CE /* LaunchScreen.storyboard */; };
+		9362906E29451D73003BF4CE /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 9362906D29451D72003BF4CE /* README.md */; };
+		93629070294521D1003BF4CE /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9362906F294521D1003BF4CE /* SplashScreenView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		936290622943761B003BF4CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		936290652943761B003BF4CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		936290672943761B003BF4CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9362906D29451D72003BF4CE /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
+		9362906F294521D1003BF4CE /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +44,7 @@
 		9362904D29437619003BF4CE = {
 			isa = PBXGroup;
 			children = (
+				9362906D29451D72003BF4CE /* README.md */,
 				9362905829437619003BF4CE /* Roll the Dice */,
 				9362905729437619003BF4CE /* Products */,
 			);
@@ -63,6 +68,7 @@
 				936290622943761B003BF4CE /* Assets.xcassets */,
 				936290642943761B003BF4CE /* LaunchScreen.storyboard */,
 				936290672943761B003BF4CE /* Info.plist */,
+				9362906F294521D1003BF4CE /* SplashScreenView.swift */,
 			);
 			path = "Roll the Dice";
 			sourceTree = "<group>";
@@ -127,6 +133,7 @@
 			files = (
 				936290662943761B003BF4CE /* LaunchScreen.storyboard in Resources */,
 				936290632943761B003BF4CE /* Assets.xcassets in Resources */,
+				9362906E29451D73003BF4CE /* README.md in Resources */,
 				9362906129437619003BF4CE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -141,6 +148,7 @@
 				9362905E29437619003BF4CE /* ViewController.swift in Sources */,
 				9362905A29437619003BF4CE /* AppDelegate.swift in Sources */,
 				9362905C29437619003BF4CE /* SceneDelegate.swift in Sources */,
+				93629070294521D1003BF4CE /* SplashScreenView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
